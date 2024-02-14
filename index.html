@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Striking Webpage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <input type="checkbox" name="" id="checkbox">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#carousle">carousel</a></li>
+                <li><a href="#gallary">gallery</a></li>
+
+
+            </ul>
+            <div class="logo">
+               <img src="image/images.jpg" alt="image1">
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="header-content">
+            <h1>Welcome to Our Striking Website</h1>
+            <p>Where Design Meets Innovation</p>
+        </div>
+    </header>
+
+
+  <div class="carousel">
+    <!-- Carousel content goes here -->
+    <div class="container">
+        <div class="panel active" style="background-image: 
+                url('https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg')">
+          <h3>French Polynesia</h3>
+        </div>
+        <div class="panel" style="background-image: 
+                url('https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg')">
+          <h3>Maldives</h3>
+        </div>
+        <div class="panel" style="background-image: 
+                url('https://images.pexels.com/photos/12001664/pexels-photo-12001664.jpeg')">
+          <h3>Cambodia</h3>
+        </div>
+        <div class="panel" style="background-image: 
+                url('https://images.pexels.com/photos/3948134/pexels-photo-3948134.jpeg')">
+          <h3>Hawaii</h3>
+        </div>
+        <div class="panel" style="background-image: 
+                url('https://images.pexels.com/photos/2088161/pexels-photo-2088161.jpeg')">
+          <h3>Bali</h3>
+        </div>
+      </div>
+  </div>
+
+  <div id="gallery" class="gallery">
+    <!-- Image gallery goes here -->
+    <!-- Each image should be a clickable thumbnail that opens a modal -->
+    <img src="image/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg" alt="Image 1" onclick="openModal('image/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg')">
+    <img src="image/download (1).jpg" alt="Image 2" onclick="openModal('image2.jpg')">
+    <img src="image/images.jpg" alt="Image 3" onclick="openModal('image/images.jpg')">
+    <img src="image/Ultraprocessed-food-58d54c3.jpg" alt="Image 1" onclick="openModal('image/Ultraprocessed-food-58d54c3.jpg')">
+    <img src="image/Variety-fruits-vegetables.webp" alt="Image 2" onclick="openModal('image2.jpg')">
+    <img src="image/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg" alt="Image 1" onclick="openModal('image/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg')">
+    <img src="image/download (1).jpg" alt="Image 2" onclick="openModal('image/download (1).jpg')">
+    <img src="image/images.jpg" alt="Image 3" onclick="openModal('image/images.jpg ')">
+    <img src="image/Ultraprocessed-food-58d54c3.jpg" alt="Image 1" onclick="openModal('image/Ultraprocessed-food-58d54c3.jpg')">
+    <img src="image/Variety-fruits-vegetables.webp" alt="Image 2" onclick="openModal('image/Variety-fruits-vegetables.webp' )">
+
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <footer>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#carousle">carousel</a></li>
+        <li><a href="#gallary">gallery</a></li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
